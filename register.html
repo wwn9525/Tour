@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/register.css"/>
+</head>
+<body>
+<div class="logo">
+    <img src="images/logo.png" alt="">
+    <a href="index.html">返回首页登录</a>
+</div>
+<svg id="svg12" width=1200px" height="450">
+</svg>
+<div class="container">
+ <form id="form1">
+    <div id="main">
+        <form action="#" class="form-horizontal" id="register_form">
+            <div class="form-group">
+                <label for="email" class="control-label1"><span class="t-red">*</span>邮&nbsp;&nbsp;箱：</label>
+                <div class="">
+                    <input type="text" class="form-control" id="email" name="email" onfocus="email_cue()" onblur="check_email()" placeholder="">
+                </div>
+                <label class="control-label2 zy_tl zy_nowweighht" >
+                    <span id="email_cue">请输入有效的电子邮箱</span>
+                    <span id="email_tip" style="display: none; color:red">请输入有效的电子邮箱</span>
+                    <span id="emailadd" style="display: none;">恭喜！该邮箱可注册</span>
+                </label>
+            </div>
+
+            <!-- 昵称 -->
+            <div class="form-group">
+                <label for="username" class="control-label1"><span>*</span>昵&nbsp;&nbsp;称：</label>
+                <div>
+                    <input type="text" class="form-control" id="username" name="uname" onfocus="username_cue()" onblur="check_username()" placeholder="" >
+                </div>
+                <label class="control-label2 zy_tl zy_nowweighht">
+                    <span id="username_cue">2-20位字符组成</span>
+                    <span id="username_tip" style="display: none;color:red">请输入有效昵称</span>
+                    <span id="nicknamesuccess" style="display: none;">恭喜！该昵称可注册</span>
+                </label>
+            </div>
+            <!--验证码-->
+            <div id="main2">
+
+                    <div class="form-group">
+                        <label for="password" class="control-label1 zy_tl zy_nowweight"><span class="t_red">*</span>密&nbsp;&nbsp;码：</label>
+                        <div class="">
+                            <input type="password" class="form-control" id="password" name="upwd" onfocus="password_cue()" onblur="check_password()" placeholder="" >
+                        </div>
+                        <label class="control-label2 zy_tl zy_nowweighht">
+                            <span id="password_cue">6-20位字符组成，区分大小写</span>
+                            <span id="password_tip" style="display:none; color:red;">请输入密码</span>
+                            <span id="passwdright" style="display:none;">恭喜！密码可用</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password2" class="control-label1"><span class="t_-ed">*</span>重复密码：</label>
+                        <div>
+                            <input type="password" class="form-control" id="password2" name="rpass" onfocus="password2_cue()" onblur="check_password2()" placeholder="">
+                        </div>
+                        <label  class="control-label2 zy_tl zy_nowweighht">
+                            <span id="password2_cue">请再次输入密码</span>
+                            <span id="password2_tip" style="display: none;color:red;">请输入密码</span>
+                            <span id="passwd2right" style="display: none;">恭喜！重复密码正确</span>
+                        </label>
+                    </div>
+            </div>
+            <div class="form-group">
+                <label for="upwd" class="control-label1">输入验证码：</label>
+                <div>
+                    <input type="text" class="form-control yzm" id="upwd">
+                </div>
+                <div id="yzm">
+                    <canvas id="c1"></canvas>
+                </div>
+
+            </div>
+        </form>
+    </div>
+     <div id="footer">
+         <button id="btn">立即注册</button>
+     </div>
+ </form>
+</div>
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/appCan.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
