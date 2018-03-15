@@ -1,0 +1,324 @@
+
+
+
+/*banner广告区域*/
+.three_banner{
+	width:980px;
+	height:173px;
+	overflow: hidden;
+	box-sizing: border-box;
+	// margin-top:50px;
+	margin-bottom:30px;
+	position: relative;
+	margin:0 auto;
+	margin-top:-100px;
+	z-index: -10;
+	margin-top:10px;
+}
+
+
+	
+
+
+/*banner广告区域-----------------------------------*/
+
+/*主体开始------------------*/
+.three_main{
+	width:980px;
+	height:1235px;
+	// border:1px solid red;
+	box-sizing:border-box;
+	overflow:hidden;
+	margin:0 auto;
+	margin-bottom:50px;
+
+}
+/*公共标题样式*/
+.republic_title{
+	width:100%;
+	min-width: 450px;
+	height:65px;
+	border-bottom: 1px solid #dedede;
+	// background-color: pink;
+}
+.republic_title h1{
+	line-height: 52px;
+	color:#323232;
+	float:left;
+	font-size: 28px;
+	padding-left: 5px;
+	font-family: Hiragino Sans GB,Microsoft YaHei,\9ED1\4F53,\5b8b\4f53,sans-serif;
+
+}
+
+/*签证国家*/
+.three_main .first_content .guojia{
+	width:980px;
+	height:524px;
+	box-sizing:border-box;
+	overflow:hidden;
+	// background-color:pink;
+	padding:30px 0 10px;
+}
+/*8个a链接最外面的父元素a*/
+.guojia .content{
+	width:228px;
+	height:212px;
+	overflow: hidden;
+	float:left;
+	margin-right:17px;
+	background-color:#fff;
+	position: relative;
+	margin-bottom:30px;
+	box-sizing:border-box;
+}
+/*img图片*/
+.guojia .content img{
+	width：232px;
+	height:154px;
+	display: block;
+}
+/*图片下面的文字介绍*/
+.guojia .content .content_product{
+	width:210px;
+	height:58px;
+	padding:0 10px;
+	overflow: hidden;
+
+}
+/*国家名字*/
+.guojia .content .content_product .name{
+	width:120px;
+	height:158px;
+	float:left;
+	line-height:60px;
+	color:#323232;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space: nowrap;
+	font-size:22px;
+	font-weight: bold;
+	// background-color:red;
+}
+/*价格*/
+.guojia .content .content_product .price{
+	float:right;
+	height:58px;
+}
+/*起*/
+.guojia .content .content_product .price .txt{
+	font-size:14px;
+	color:#636363;
+	line-height:40px;
+	padding-top:14px;
+	float:right;
+}
+/*19*/
+.guojia .content .content_product .price em{
+	font-size:30px;
+	color:#ff7466;
+	line-height:58px;
+	float:right;
+}
+/*￥*/
+.guojia .content .content_product .price .icon{
+	font-size:16px;
+	color:#ff7466;
+	line-height:40px;
+	padding-top: 13px;
+	float:right;
+}
+/*鼠标悬停背景*/
+.guojia .content .BlackBG{
+	background:rgba(0,0,0,.4);
+	position: absolute;
+	width:323px;
+	height:154px;
+	left:0;
+	top:0;
+	display:none;
+}
+/*鼠标悬停出现的文字*/
+.guojia .content .hoverTxt{
+	width:116px;
+	height:40px;
+	position: absolute;
+	top:57px;
+	left:57px;
+	border:1px solid #fff;
+	color:#fff;
+	line-height:40px;
+	text-align:center;
+	font-size:18px;
+	display:none;
+}
+/*鼠标悬停*/
+.guojia .content:hover{
+	box-shadow:4px 8px 4px #aaa;
+}
+.guojia .content:hover .BlackBG{
+	display:block;
+}
+.guojia .content:hover .hoverTxt{
+	display:block;
+}
+
+/*国家的国旗*/
+.three_main .first_content .guoqi{
+	width:1056px;
+	height:277px;
+	// background-color:gray;
+	box-sizing:border-box;
+	padding-bottom: 37px;
+	white-space:nowrap;
+	margin-left:-75px;
+	// background-color:red;
+
+}
+.first_content .guoqi .guoqi_content{
+	float:left;
+	width:100px;
+	margin-left:76px;
+	margin-bottom:30px;
+
+	// background-color:red;
+}
+.guoqi .guoqi_content a{
+	display:block;
+	width:100px;
+	height:100px;
+	text-align:center;
+	margin-right:48px;
+	color:#323232;
+	font-size:16px;
+}
+.guoqi .guoqi_content a img{
+	display:block;
+	border:1px solid #ebebeb;
+	margin:0 auto;
+	width:98px;
+}
+.guoqi .guoqi_content a span{
+	display:block;
+	width:100%;
+	height:40px;
+	line-height:20px;
+	padding-top:13px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+/*第三部分特别推荐*/
+.three_content .recommendList{
+	width:980px;
+	height:356px;
+	box-sizing:border-box;
+	overflow:hidden;
+	// background-color:pink;
+	padding:32px 0 50px;
+}
+.three_content .recommendList a{
+	width:312px;
+	height:274px;
+	float:left;
+	position: relative;
+	margin:0 14px 0 0 ;
+	background-color:#fff;
+	overflow:hidden;
+}
+.three_content .recommendList a img{
+	display:block;
+	width:312px;
+	height:202px;
+}
+.three_content .recommendList a .BlackBG{
+	width:312px;
+	height:122px;
+	background:rgba(0,0,0,.4);
+	padding-top:80px;
+	position: absolute;
+	top:0;
+	left:0;
+	display:none;
+}
+.three_content .recommendList a .hoverTxt{
+	width:116px;
+	height:40px;
+	margin:0 auto;
+	border:1px solid #fff;
+	color:#fff;
+	line-height:40px;
+	text-align:center;
+	font-size:18px;
+	display:block;
+}
+/*下方背景条*/
+.three_content .recommendList a .recommendImgBG{
+	width:227px;
+	height:36px;
+	position: absolute;
+	bottom:73px;
+	left:0;
+	background:rgba(0,0,0,.4);
+}
+.recommendList a .feiji{
+	position: absolute;
+	bottom:73px;
+	line-height:36px;
+	color:#fff;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	width:206px;
+	padding-left: 18px;
+	left:0;
+	font-size:22px;
+}
+/*免签*/
+.recommendList a .mianqian{
+	width:88px;
+	right:0;
+	font-size:16px;
+	background:rgba(0,0,0,.8);
+	position: absolute;
+	bottom:73px;
+	line-height:36px;
+	color:#fff;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	text-align:center;
+}
+/*下方文字说明*/
+.recommendList a .product_title{
+	padding:6px 16px 0;
+	width:280px;
+	height:55px;
+	display:block;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	line-height:26px;
+	font-size:16px;
+	color:#323232;
+}
+/*鼠标悬停*/
+.recommendList a:hover{
+	text-decoration: none;
+	box-shadow:4px 8px 4px #aaa;
+}
+.recommendList a:hover .BlackBG{
+	display:block;
+}
+/*主体结束*/
+
+
+/*嵌套*/
+#three_header iframe{
+	width:100%;
+	height:550px;
+}
+#three_footer iframe{
+	width:100%;
+	height:273px;
+}
